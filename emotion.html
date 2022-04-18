@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['SAD',     11],
+          ['ANGRY',      2],
+          ['HAPPY',  2],
+          ['EXICTED', 2],
+          ['ANXIOUS',    7]
+        ]);
+
+        var options = {
+          // title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <style>
+        body {
+            position: relative;
+            width: 1440px;
+            height: 1024px;
+            background: linear-gradient(65deg, #B4FFE9 0.79%, #D3EDFF 26.58%, rgba(245, 207, 255, 0.195141) 79.72%, rgba(255, 222, 106, 0.29) 99.05%)
+        }
+
+        .logo {
+            position: absolute;
+            width: 141px;
+            height: 40px;
+            left: 65px;
+            top: 25px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 25px;
+            /* or 62% */
+
+            text-align: center;
+
+            color: #000000;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .hm {
+            position: absolute;
+            width: 246px;
+            height: 25px;
+            left: 21px;
+            top: 76px;
+
+            font-family: 'Imprint MT Shadow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            /* identical to box height, or 156% */
+
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        .mid {
+            position: absolute;
+            width: 533px;
+            height: 49px;
+            left: 458px;
+            top: 1px;
+
+            font-family: 'Inder', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .txt {
+            position: absolute;
+            width: 921px;
+            height: 100px;
+            left: 254px;
+            top: 127px;
+
+            font-family: 'Inder';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 125% */
+
+            text-align: center;
+
+            color: #000000;
+        }
+
+        .box input {
+            position: absolute;
+            width: 542px;
+            height: 415px;
+            left: 124px;
+            top: 334px;
+
+            background: #FFFFFF;
+            border: 1px solid black;
+            border-radius: 55px;
+        }
+
+        .butt {
+            position: absolute;
+            width: 69px;
+            height: 24px;
+            left: 360px;
+            top: 779px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+
+        }
+
+        .butt button {
+            border-radius: 26px;
+            background-color: white;
+            position: absolute;
+            width: 159px;
+            height: 41px;
+            left: -46px;
+            top: 13px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        .L1 {
+            position: absolute;
+            width: 501px;
+            height: 0px;
+            left: 495px;
+            top: 549px;
+
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transform: rotate(90deg);
+
+        }
+
+        #piechart {
+            position: absolute;
+            left: 856px;
+            top: 294px;
+        }
+
+        .fr {
+            position: absolute;
+            width: 308px;
+            height: 15px;
+            left: 614px;
+            top: 958px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        .scd {
+            position: absolute;
+            width: 254px;
+            height: 15px;
+            left: 644px;
+            top: 982px;
+            display: flex;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            /* identical to box height */
+
+
+            color: #000000;
+        }
+
+        .md {
+            padding: 0px 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="logo">
+            <p>HLM</p>
+        </div>
+        <div class="hm">
+            <p>Humans like machine</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="mid">
+            <h5>Text Emotion Recognition</h5>
+        </div>
+        <div class="txt">
+            Creativity is intelligence having fun . Lorem Ipsum is simply dummy text of the<br> printing and typesetting
+            industry . This has been the industry’s standard<br> dummy text ever since the 1500’s , when an unknown
+            printer
+            took a gallery of type<br> and scrambled it to make a type specimen book
+        </div>
+    </div>
+
+    <div class="chart">
+        <div>
+            <div class="box">
+                <input type="text">
+            </div>
+            <div class="butt">
+                <button>submit</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="L1"></div>
+        </div>
+
+        <div id="piechart" style="width: 600px; height: 500px;">
+        </div>
+    </div>
+    <div class="last">
+        <div class="fr">copyright Human Like Machines. All Rights Reserved</div>
+        <div class="scd">Privacy Policy<div class="md">|</div>Terms and conditions</div>
+
+    </div>
+</body>
+
+</html>
